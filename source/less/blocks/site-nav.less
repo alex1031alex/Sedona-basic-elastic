@@ -1,0 +1,62 @@
+.site-nave__logo {
+  position: relative;
+  top: @logo-height;
+  z-index: @basic-z-index + 1;
+
+  width: 138px;
+  margin-top: 0 - @logo-height;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  &::after {
+    content: "";
+    width: 138px;
+    order: -3;
+  }
+}
+
+.site-nav__item {
+  width: 20%;
+
+  &_first {
+    order: -5;
+  }
+
+  &_second {
+    order: -4;
+  }
+
+  &_third {
+    order: -2;
+  }
+
+  &_fourth {
+    order: -1;
+  }
+}
+
+.site-nav__link {
+  display: block;
+  padding: 16px 0;
+
+  font-size: 14px;
+  line-height: 26px;
+  font-family: "PT Sans";
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
