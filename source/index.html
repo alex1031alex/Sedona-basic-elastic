@@ -1,42 +1,100 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sedona</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body class="page">
-  <header class="page-header">
-    <div class="page-header__logo logo">
-      <a class="logo__link">
-        <img class="logo__image" src="img/logo.png">
-      </a>
-    </div>
-    <nav class="page-header__site-nav site-nav">
-      <ul class="site-nav__list">
-        <li class="site-nav__item">
-          <a href="#" class="site-nav__link">Информация</a>
-        </li>
-        <li class="site-nav__item">
-          <a href="#" class="site-nav__link">Фото</a>
-        </li>
-        <li class="site-nav__item">
-          <a href="#" class="site-nav__link">Карта штата</a>
-        </li>
-        <li class="site-nav__item">
-          <a href="#" class="site-nav__link">Гостиницы</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main class="page-main">
-    <section class="page__promo promo">
-      <div class="promo__image-wrapper">
-        <img src="img/background-photo.jpg">
-      </div>
-    </section>
-  </main>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sedona</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body class="page">
+    <header class="page-header">
+      <nav class="page-header__site-nav site-nav">
+        <div class="site-nave__logo logo">
+          <a class="logo__link">
+            <img class="logo__image" src="img/logo.png" width="138" height="70">
+          </a>
+        </div>
+        <ul class="site-nav__list">
+          <li class="site-nav__item site-nav__item_first">
+            <a href="#" class="site-nav__link">Информация</a>
+          </li>
+          <li class="site-nav__item site-nav__item_second">
+            <a href="#" class="site-nav__link">Фото и видео</a>
+          </li>
+          <li class="site-nav__item  site-nav__item_third">
+            <a href="#" class="site-nav__link">Карта штата</a>
+          </li>
+          <li class="site-nav__item site-nav__item_fourth">
+            <a href="#" class="site-nav__link">Гостиницы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Седона</h1>
+      <section class="page__promo promo">
+        <div class="promo__image-wrapper">
+          <img class="promo__image" src="img/background-photo.jpg" width="1200" alt="">
+        </div>
+        <div class="promo__slogan">
+          <span class="promo__slogan-text promo__slogan-text_welcome"><b class="visually-hidden">Welcome</b></span>
+          <span class="promo__slogan-text promo__slogan-text_gorgeous"><i class="visually-hidden">to the gorgeous</i></span>
+          <span class="promo__slogan-text promo__slogan-text_sedona"><b class="visually-hidden">Sedona</b></span>
+          <span class="promo__slogan-text promo__slogan-text_canyon"><i class="visually-hidden">"Because the Grand Canyon sucks!"</i></span>
+        </div>
+      </section>
+      <section class="features">
+        <h2 class="features__heading">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <b class="features__intro">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</b>
+        <ul class="features__list">
+          <li class="features__item features__item_town">
+            <h3 class="features__title">Настоящий городок</h3>
+            <p class="features__number">№1</p>
+            <p class="features__text">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+            <div class="features__image-wrapper">
+              <img src="img/real_town.png" alt="Седона, центр города">
+            </div>
+            <ul class="features__sub-list">
+              <li class="features__sub-item">
+                <h4 class="features__sub-title">Жилье</h4>
+                <p class="features__sub-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              </li>
+              <li class="features__sub-item">
+                <h4 class="features__sub-title">Еда</h4>
+                <p class="features__sub-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+              <li class="features__sub-item">
+                <h4 class="features__sub-title">Сувениры</h4>
+                <p class="features__sub-text">Не только китайского, но и местного производства!</p>
+              </li>
+            </ul>
+          </li>
+          <li class="features__item features__item_bridge">
+            <h3 class="features__title">Там есть мост дьявола</h3>
+            <p class="features__number">№2</p>
+            <p class="features__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            <div class="features__image-wrapper">
+              <img src="img/bridge.png" alt="Седона, центр города">
+            </div>
+          </li>
+          <li class="features__item features__item_square">
+            <h3 class="features__title">Небольшая площадь</h3>
+            <p class="features__number">№3</p>
+            <p class="features__text">Все достопримечательности находятся очень близко</p>
+          </li>
+          <li class="features__item features__item_road">
+            <h3 class="features__title">Красивая дорога</h3>
+            <p class="features__number">№4</p>
+            <p class="features__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="features__item features__item_no-tourist">
+            <h3 class="features__title">Мало туристов</h3>
+            <p class="features__number">№5</p>
+            <p class="features__text">Большинство едет в гранд каньон и толпится там</p>
+          </li>
+        </ul>
+      </section>
+    </main>
   <footer class="page-footer"></footer>
 </body>
 </html>
