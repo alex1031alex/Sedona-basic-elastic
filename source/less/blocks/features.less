@@ -5,7 +5,7 @@
   background-color: #ffffff;
 }
 
-.features__heading {
+.features__main-title {
   display: block;
   width: 450px;
   margin: 0 auto 28px auto;
@@ -21,11 +21,57 @@
 .features__intro {
   display: block;
   width: 500px;
-  margin: 0 auto;
+  margin: 0 auto 60px auto;
 
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
+}
+
+.features__list {
+  .list-reset;
+}
+
+.features__item_town {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.features__item-inner {
+  width: 33.333%;
+}
+
+.features__image-wrapper {
+  width: 66.666%;
+  height: 256px;
+  overflow: hidden;
+  background-color: @skyblue;
+}
+
+.features__title {
+  font-size: 21px;
+  line-height: 1;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.features__number {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.features__text {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.features__sub-list {
+  .list-reset;
+  width: 100%;
 }
