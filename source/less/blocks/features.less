@@ -34,21 +34,35 @@
   .list-reset;
 }
 
-.features__item_large {
-  display: flex;
-  flex-wrap: wrap;
-  --sub-text: white;
+.features__item {
+  &_large {
+    display: flex;
+    flex-wrap: wrap;
+    --sub-text: white;
 
-  &::after {
-    content:"";
-    width: 66.666%;
-    min-height: 257px;
-    order: -1;
+    &::after {
+      content:"";
+      width: 66.666%;
+      min-height: 257px;
+      order: -1;
 
-    background-image: url("../img/real_town.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+      // background-image: url("../img/real_town.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+
+  &_town {
+      &::after {
+      background-image: url("../img/real_town.png");
+    }
+  }
+
+  &_bridge {
+    &::after {
+      background-image: url("../img/bridge.png");
+    }
   }
 }
 
