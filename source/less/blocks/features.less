@@ -34,9 +34,10 @@
   .list-reset;
 }
 
-.features__item_town {
+.features__item_large {
   display: flex;
   flex-wrap: wrap;
+  --sub-text: white;
 
   &::after {
     content:"";
@@ -73,10 +74,7 @@
   font-weight: 800;
   text-align: center;
   text-transform: uppercase;
-
-  &_white {
-    color: #ffffff;
-  }
+  color: var(--sub-text, #000);
 }
 
 .features__number {
@@ -88,10 +86,7 @@
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
-
-  &_white {
-    color: #ffffff;
-  }
+  color: var(--sub-text, #000);
 }
 
 .features__text-in-number {
@@ -127,10 +122,7 @@
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
-
-  &_white {
-    color: #ffffff;
-  }
+  color: var(--sub-text, #000);
 }
 
 .features__sub-list {
@@ -138,6 +130,7 @@
   display: flex;
 
   width: 100%;
+  margin-bottom: 85px; //Временный отступ
 }
 
 .features__sub-item {
@@ -147,6 +140,8 @@
 
   width: 33.333%;
   padding-top: 160px;
+
+  --sub-text: #000;
 
   background-repeat: no-repeat;
   background-position: center 60px;
