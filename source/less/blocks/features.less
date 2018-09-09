@@ -32,6 +32,8 @@
 
 .features__list {
   .list-reset;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .features__item {
@@ -39,6 +41,7 @@
     display: flex;
     flex-wrap: wrap;
     --sub-text: white;
+    width: 100%;
 
     &::after {
       content:"";
@@ -53,6 +56,13 @@
     }
   }
 
+  &_small {
+    width: 33.333%;
+    --feature-width: 100%;
+    --feature-bg: #eeeeee;
+    min-height: @feature-height;
+  }
+
   &_town {
       &::after {
       background-image: url("../img/real_town.png");
@@ -64,6 +74,10 @@
       background-image: url("../img/bridge.png");
     }
   }
+
+  &_reverse {
+    flex-direction: row-reverse;
+  }
 }
 
 .features__item-inner {
@@ -72,15 +86,15 @@
   align-items: center;
   order: -2;
 
-  width: 33.333%;
+  width: var(--feature-width, 33.333%);
   padding: 48px 0 0 0;
 
-  background-color: @skyblue;
+  background-color: var(--feature-bg, @skyblue);
 }
 
 .features__title {
   .p-reset;
-  width: 165px;
+  width: 156px;
   margin-bottom: 25px;
 
   font-size: 21px;
