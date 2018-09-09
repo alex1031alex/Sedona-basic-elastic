@@ -46,7 +46,7 @@
     &::after {
       content:"";
       width: 66.666%;
-      min-height: 257px;
+      min-height: @feature-height;
       order: -1;
 
       // background-image: url("../img/real_town.png");
@@ -60,7 +60,6 @@
     width: 33.333%;
     --feature-width: 100%;
     --feature-bg: #eeeeee;
-    min-height: @feature-height;
   }
 
   &_town {
@@ -86,7 +85,9 @@
   align-items: center;
   order: -2;
 
+  box-sizing: border-box;
   width: var(--feature-width, 33.333%);
+  min-height: @feature-height;
   padding: 48px 0 0 0;
 
   background-color: var(--feature-bg, @skyblue);
