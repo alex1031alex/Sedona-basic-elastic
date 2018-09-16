@@ -101,6 +101,37 @@
           </li>
         </ul>
       </section>
+      <section class="search">
+        <header class="search__header">
+          <b class="search__intro-question">Заинтересовались?</b>
+          <p class=search__intro-text>Укажите предполагаемые даты поездки,
+          и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <h2 class="search__title">Поиск гостиницы в Седоне</h2>
+        </header>
+        <div class="search__form-wrapper">
+          <form class="search__form" action="http://www.echo.htmlacademy.ru" method="get">
+            <ul class="search__list">
+              <li class="search__wrapper">
+                <label for="date-in">Дата заезда</label>
+                <input class="search__field" type="text" name="date-in" id="date-in">
+              </li>
+              <li class="search__wrapper">
+                <label for="date-out">Дата выезда</label>
+                <input class="search__field" type="text" name="date-out" id="date-out">
+              </li>
+              <li class="search__wrapper">
+                <label for="adult">Взрослые</label>
+                <input class="search__field" type="text" name="adult" id="adult">
+              </li>
+              <li class="search__wrapper">
+                <label for="children">Дети</label>
+                <input class="search__field" type="text" name="children" id="children">
+              </li>
+            </ul>
+            <button class="search__form-submit" type="submit">Найти</button>
+          </form>
+        </div>
+      </section>
     </main>
   <footer class="page-footer"></footer>
 </body>
