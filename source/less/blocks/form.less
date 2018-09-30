@@ -65,6 +65,15 @@
 
       text-align: center;
     }
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      background-color: #ffffff;
+      outline: 2px solid #e5e5e5;
+    }
 }
 
 .form__calendar {
@@ -116,6 +125,15 @@
       height: 3px;
       background-color: #a9a9a9;
     }
+
+    &:hover::after,
+    &:focus::after {
+      background-color: #000000;
+    }
+
+    &:active::after {
+      background-color: @skyblue;
+    }
   }
 
   &_plus {
@@ -139,6 +157,18 @@
       width: 3px;
       height: 100%;
       background-color: #a9a9a9;
+    }
+
+    &:hover::after,
+    &:focus::after,
+    &:hover::before,
+    &:focus::before {
+      background-color: #000000;
+    }
+
+    &:active::after,
+    &:active::before {
+      background-color: @skyblue;
     }
   }
 }
