@@ -111,66 +111,68 @@
           <button class="booking__btn booking__btn_open btn btn_extra-large btn_brown">Поиск гостиницы в Седоне</button>
         </header>
         <div class="booking__map">
-            <form class="form booking__form" action="http://www.echo.htmlacademy.ru" method="get">
-              <div class="form__item-wrapper form__item-wrapper_date">
-                <label class="form__label" for="date-in">Дата заезда:</label>
-                <input class="form__field form__field_date" type="text" name="date-in" id="date-in" placeholder="24 апреля 2017">
-                <svg class="form__calendar" width="21" height="22">
-                  <use xlink:href="#s-calendar"></use>
-                </svg>
+          <form class="form booking__form" action="http://www.echo.htmlacademy.ru" method="get">
+            <div class="form__item-wrapper form__item-wrapper_date">
+              <label class="form__label" for="date-in">Дата заезда:</label>
+              <input class="form__field form__field_date" type="text" name="date-in" id="date-in" placeholder="24 апреля 2017">
+              <svg class="form__calendar" width="21" height="22">
+                <use xlink:href="#s-calendar"></use>
+              </svg>
+            </div>
+            <div class="form__item-wrapper form__item-wrapper_date">
+              <label class="form__label" for="date-out">Дата выезда:</label>
+              <input class="form__field form__field_date" type="text" name="date-out" id="date-out" placeholder="4 июля 2017">
+              <svg class="form__calendar" width="21" height="22">
+                <use xlink:href="#s-calendar"></use>
+              </svg>
+            </div>
+            <div class="form__fieldset form__fieldset_people">
+              <div class="form__item-wrapper form__item-wrapper_adults">
+                <label class="form__label" for="adult">Взрослые:</label>
+                <input class="form__field form__field_people" type="text" name="adult" id="adults" placeholder="0">
+                <span class="form__count form__count_minus"></span>
+                <span class="form__count form__count_plus"></span>
               </div>
-              <div class="form__item-wrapper form__item-wrapper_date">
-                <label class="form__label" for="date-out">Дата выезда:</label>
-                <input class="form__field form__field_date" type="text" name="date-out" id="date-out" placeholder="4 июля 2017">
-                <svg class="form__calendar" width="21" height="22">
-                  <use xlink:href="#s-calendar"></use>
-                </svg>
+              <div class="form__item-wrapper form__item-wrapper_children">
+                <label class="form__label" for="children">Дети:</label>
+                <input class="form__field form__field_people" type="text" name="children" id="children" placeholder="0">
+                <span class="form__count form__count_minus"></span>
+                <span class="form__count form__count_plus"></span>
               </div>
-              <div class="form__fieldset form__fieldset_people">
-                <div class="form__item-wrapper form__item-wrapper_adults">
-                  <label class="form__label" for="adult">Взрослые:</label>
-                  <input class="form__field form__field_people" type="text" name="adult" id="adults" placeholder="0">
-                  <span class="form__count form__count_minus"></span>
-                  <span class="form__count form__count_plus"></span>
-                </div>
-                <div class="form__item-wrapper form__item-wrapper_children">
-                  <label class="form__label" for="children">Дети:</label>
-                  <input class="form__field form__field_people" type="text" name="children" id="children" placeholder="0">
-                  <span class="form__count form__count_minus"></span>
-                  <span class="form__count form__count_plus"></span>
-                </div>
-              </div>
-              <button class="btn btn_blue btn_large form__btn" type="submit">Найти</button>
-            </form>
+            </div>
+            <button class="btn btn_blue btn_large form__btn" type="submit">Найти</button>
+          </form>
         </div>
       </section>
     </main>
-  <footer class="page-footer">
-    <p class="page-footer__tag">#Visitsedona</p>
-    <div class="socials page-footer__socials">
-      <div class="socials__item">
-        <svg class="socials__icon socials__icon_twitter" width="17" height="15">
-          <use xlink:href="#s-twitter"></use>
-        </svg>
+    <footer class="page-footer">
+      <p class="page-footer__tag">#Visitsedona</p>
+      <div class="socials page-footer__socials">
+        <a class="socials__link" href="#">
+          <svg class="socials__icon socials__icon_twitter" width="17" height="15">
+            <use xlink:href="#s-twitter"></use>
+          </svg>
+        </a>
+        <a class="socials__link" href="#">
+          <svg class="socials__icon socials__icon_fb" width="12" height="22">
+            <use xlink:href="#s-fb"></use>
+          </svg>
+        </a>
+        <a class="socials__link" href="#">
+          <svg class="socials__icon socials__icon_youtube" width="20" height="16">
+            <use xlink:href="#s-ytb"></use>
+          </a>
+        </div>
+        <div class="copyright">
+          <span class="copyright__intro">website by</span>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">
+            <svg class="copyright__icon" width="115" height="41">
+              <use xlink:href="#s-html-academy"></use>
+            </svg>
+          </a>
+          <span class="visually-hidden">HTML Academy</span>
+        </div>
       </div>
-      <div class="socials__item">
-        <svg class="socials__icon socials__icon_fb" width="12" height="22">
-          <use xlink:href="#s-fb"></use>
-        </svg>
-      </div>
-      <div class="socials__item">
-        <svg class="socials__icon socials__icon_youtube" width="20" height="16">
-          <use xlink:href="#s-ytb"></use>
-        </svg>
-      </div>
-      <div class="copyright">
-        <span class="copyright__intro">website by</span>
-        <svg class="copyright__icon" width="115" height="41">
-          <use xlink:href="#s-html-academy"></use>
-        </svg>
-        <span class="visually-hidden">html academy</span>
-      </div>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
