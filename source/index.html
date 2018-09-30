@@ -7,6 +7,9 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body class="page">
+    <div class="page__sprite-wrapper">
+      <include src="build/img/sprite-auto.svg"></include>
+    </div>
     <header class="page-header">
       <nav class="page-header__site-nav site-nav">
         <div class="site-nave__logo logo">
@@ -101,35 +104,40 @@
           </li>
         </ul>
       </section>
-      <section class="search">
-        <header class="search__header">
-          <b class="search__intro-question">Заинтересовались?</b>
-          <p class=search__intro-text>Укажите предполагаемые даты поездки,
-          и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <h2 class="search__title">Поиск гостиницы в Седоне</h2>
+      <section class="booking">
+        <header class="booking__header">
+          <b class="booking__intro-question">Заинтересовались?</b>
+          <p class=booking__intro-text>Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <button class="booking__btn booking__btn_open btn btn_extra-large btn_brown">Поиск гостиницы в Седоне</button>
         </header>
-        <div class="search__form-wrapper">
-          <form class="search__form" action="http://www.echo.htmlacademy.ru" method="get">
-            <ul class="search__list">
-              <li class="search__wrapper">
-                <label for="date-in">Дата заезда</label>
-                <input class="search__field" type="text" name="date-in" id="date-in">
-              </li>
-              <li class="search__wrapper">
-                <label for="date-out">Дата выезда</label>
-                <input class="search__field" type="text" name="date-out" id="date-out">
-              </li>
-              <li class="search__wrapper">
-                <label for="adult">Взрослые</label>
-                <input class="search__field" type="text" name="adult" id="adult">
-              </li>
-              <li class="search__wrapper">
-                <label for="children">Дети</label>
-                <input class="search__field" type="text" name="children" id="children">
-              </li>
-            </ul>
-            <button class="search__form-submit" type="submit">Найти</button>
-          </form>
+        <div class="booking__map">
+            <form class="form booking__form" action="http://www.echo.htmlacademy.ru" method="get">
+              <div class="form__item-wrapper form__item-wrapper_date">
+                <label class="form__label" for="date-in">Дата заезда:</label>
+                <input class="form__field form__field_date" type="text" name="date-in" id="date-in">
+                <svg class="form__calendar" width="21" height="22">
+                  <use xlink:href="#s-calendar"></use>
+                </svg>
+              </div>
+              <div class="form__item-wrapper form__item-wrapper_date">
+                <label class="form__label" for="date-out">Дата выезда:</label>
+                <input class="form__field form__field_date" type="text" name="date-out" id="date-out">
+                <svg class="form__calendar" width="21" height="22">
+                  <use xlink:href="#s-calendar"></use>
+                </svg>
+              </div>
+              <div class="form__fieldset form__fieldset_people">
+                <div class="form__item-wrapper form__item-wrapper_adults">
+                  <label class="form__label" for="adult">Взрослые:</label>
+                  <input class="form__field form__field_people" type="text" name="adult" id="adults">
+                </div>
+                <div class="form__item-wrapper form__item-wrapper_children">
+                  <label class="form__label" for="children">Дети:</label>
+                  <input class="form__field form__field_people" type="text" name="children" id="children">
+                </div>
+              </div>
+              <button class="btn btn_blue btn_large form__btn" type="submit">Найти</button>
+            </form>
         </div>
       </section>
     </main>
