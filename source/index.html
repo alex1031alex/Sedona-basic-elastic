@@ -114,14 +114,14 @@
             <form class="form booking__form" action="http://www.echo.htmlacademy.ru" method="get">
               <div class="form__item-wrapper form__item-wrapper_date">
                 <label class="form__label" for="date-in">Дата заезда:</label>
-                <input class="form__field form__field_date" type="text" name="date-in" id="date-in">
+                <input class="form__field form__field_date" type="text" name="date-in" id="date-in" placeholder="24 апреля 2017">
                 <svg class="form__calendar" width="21" height="22">
                   <use xlink:href="#s-calendar"></use>
                 </svg>
               </div>
               <div class="form__item-wrapper form__item-wrapper_date">
                 <label class="form__label" for="date-out">Дата выезда:</label>
-                <input class="form__field form__field_date" type="text" name="date-out" id="date-out">
+                <input class="form__field form__field_date" type="text" name="date-out" id="date-out" placeholder="4 июля 2017">
                 <svg class="form__calendar" width="21" height="22">
                   <use xlink:href="#s-calendar"></use>
                 </svg>
@@ -129,11 +129,15 @@
               <div class="form__fieldset form__fieldset_people">
                 <div class="form__item-wrapper form__item-wrapper_adults">
                   <label class="form__label" for="adult">Взрослые:</label>
-                  <input class="form__field form__field_people" type="text" name="adult" id="adults">
+                  <input class="form__field form__field_people" type="text" name="adult" id="adults" placeholder="0">
+                  <span class="form__count form__count_minus"></span>
+                  <span class="form__count form__count_plus"></span>
                 </div>
                 <div class="form__item-wrapper form__item-wrapper_children">
                   <label class="form__label" for="children">Дети:</label>
-                  <input class="form__field form__field_people" type="text" name="children" id="children">
+                  <input class="form__field form__field_people" type="text" name="children" id="children" placeholder="0">
+                  <span class="form__count form__count_minus"></span>
+                  <span class="form__count form__count_plus"></span>
                 </div>
               </div>
               <button class="btn btn_blue btn_large form__btn" type="submit">Найти</button>

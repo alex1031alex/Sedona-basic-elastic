@@ -45,7 +45,6 @@
   line-height: 26px;
   font-family: inherit;
   font-weight: 800;
-  text-align: center;
 
   background-color: #f2f2f2;
   border: none;
@@ -55,12 +54,16 @@
       --input-field-width: 346px;
       padding-left: 14px;
       padding-right: 30px;
+
+      text-align: left;
     }
 
     &_people {
       --input-field-width: 114px;
       padding-left: ~"calc(var(--input-field-width)/3)";
       padding-right: ~"calc(var(--input-field-width)/3)";
+
+      text-align: center;
     }
 }
 
@@ -89,6 +92,54 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 54px;
+  }
+}
+
+.form__count {
+  position: absolute;
+  top: 14px;
+
+
+  display: block;
+  width: 11px;
+  height: 11px;
+
+  &_minus {
+    right: 90px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: #a9a9a9;
+    }
+  }
+
+  &_plus {
+    right: 14px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: #a9a9a9;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 4px;
+      width: 3px;
+      height: 100%;
+      background-color: #a9a9a9;
+    }
   }
 }
 
