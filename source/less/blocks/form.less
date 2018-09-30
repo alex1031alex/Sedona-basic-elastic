@@ -1,0 +1,97 @@
+.form {
+  box-sizing: border-box;
+  padding: 55px;
+
+  background-color: #ffffff;
+}
+
+.form__item-wrapper {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &_date {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  &_adults {
+    width: 49%;
+  }
+
+  &_children {
+    width: 39%;
+  }
+}
+
+.form__label {
+  display: block;
+
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.form__field {
+  box-sizing: border-box;
+  display: block;
+  padding-top: 6px;
+  padding-bottom: 6px;
+
+  font-size: 14px;
+  line-height: 26px;
+  font-family: inherit;
+  font-weight: 800;
+  text-align: center;
+
+  background-color: #f2f2f2;
+  border: none;
+  width: var(--input-field-width);
+
+    &_date {
+      --input-field-width: 346px;
+      padding-left: 14px;
+      padding-right: 30px;
+    }
+
+    &_people {
+      --input-field-width: 114px;
+      padding-left: ~"calc(var(--input-field-width)/3)";
+      padding-right: ~"calc(var(--input-field-width)/3)";
+    }
+}
+
+.form__calendar {
+  position: absolute;
+  top: center;
+  right: 9px;
+
+  width: 21px;
+  height: 22px;
+
+  color: #ababab;
+
+    &:hover,
+    &:focus {
+      color: #000000;
+    }
+
+    &:active {
+      color: @skyblue;
+    }
+}
+
+.form__fieldset {
+  &_people {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 54px;
+  }
+}
+
+.form__btn {
+  width: 100%;
+}
