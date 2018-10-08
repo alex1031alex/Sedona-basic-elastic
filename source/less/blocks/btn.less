@@ -1,0 +1,62 @@
+.btn {
+  display: block;
+  box-sizing: border-box;
+
+  font-family: 'PT Sans', Arial, sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  cursor: pointer;
+
+  &_blue {
+    font-weight: 800;
+    background-color: @skyblue;
+    border: none;
+
+      &:hover,
+      &:focus {
+        background-color: #669ec0;
+      }
+
+      &:active {
+        background-color: #5496bd;
+        color: rgba(255, 255, 255, 0.3);
+      }
+  }
+
+  &_brown {
+    font-weight: 800;
+    background-color: @brown;
+    border: none;
+
+      &:hover,
+      &:focus {
+        background-color: #604e43;
+      }
+
+      &:active {
+        background-color: #503e33;
+        color: rgba(255, 255, 255, 0.3);
+      }
+  }
+
+  &_transparent {
+    font-weight: 400;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+  }
+
+  &_extra-large {
+    padding: 30px;
+
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  &_large {
+    padding: 16px;
+
+    font-size: 21px;
+    line-height: 26px;
+  }
+}

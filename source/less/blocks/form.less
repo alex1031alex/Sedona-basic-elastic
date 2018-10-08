@@ -1,0 +1,186 @@
+.form {
+  box-sizing: border-box;
+  padding: 55px;
+
+  background-color: #ffffff;
+
+  &_open {
+    display: block;
+  }
+
+  &_close {
+    display: none;
+  }
+}
+
+.form__item-wrapper {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &_date {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  &_adults {
+    width: 49%;
+  }
+
+  &_children {
+    width: 39%;
+  }
+}
+
+.form__label {
+  display: block;
+
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.form__field {
+  box-sizing: border-box;
+  display: block;
+  padding-top: 6px;
+  padding-bottom: 6px;
+
+  font-size: 14px;
+  line-height: 26px;
+  font-family: inherit;
+  font-weight: 800;
+
+  background-color: #f2f2f2;
+  border: none;
+  width: var(--input-field-width);
+
+    &_date {
+      --input-field-width: 346px;
+      padding-left: 14px;
+      padding-right: 30px;
+
+      text-align: left;
+    }
+
+    &_people {
+      --input-field-width: 114px;
+      padding-left: ~"calc(var(--input-field-width)/3)";
+      padding-right: ~"calc(var(--input-field-width)/3)";
+
+      text-align: center;
+    }
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      background-color: #ffffff;
+      outline: 2px solid #e5e5e5;
+    }
+}
+
+.form__calendar {
+  position: absolute;
+  top: center;
+  right: 9px;
+
+  width: 21px;
+  height: 22px;
+
+  color: #ababab;
+
+    &:hover,
+    &:focus {
+      color: #000000;
+    }
+
+    &:active {
+      color: @skyblue;
+    }
+}
+
+.form__fieldset {
+  &_people {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 54px;
+  }
+}
+
+.form__count {
+  position: absolute;
+  top: 14px;
+
+
+  display: block;
+  width: 11px;
+  height: 11px;
+
+  &_minus {
+    right: 90px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: #a9a9a9;
+    }
+
+    &:hover::after,
+    &:focus::after {
+      background-color: #000000;
+    }
+
+    &:active::after {
+      background-color: @skyblue;
+    }
+  }
+
+  &_plus {
+    right: 14px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: #a9a9a9;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 4px;
+      width: 3px;
+      height: 100%;
+      background-color: #a9a9a9;
+    }
+
+    &:hover::after,
+    &:focus::after,
+    &:hover::before,
+    &:focus::before {
+      background-color: #000000;
+    }
+
+    &:active::after,
+    &:active::before {
+      background-color: @skyblue;
+    }
+  }
+}
+
+.form__btn {
+  width: 100%;
+}

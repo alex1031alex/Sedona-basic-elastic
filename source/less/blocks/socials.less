@@ -1,0 +1,37 @@
+.socials {
+  display: flex;
+  justify-content: center;
+}
+
+.socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 46px;
+  height: 48px;
+
+   &:not(:last-child) {
+    margin-right: 7px;
+   }
+
+  text-decoration: none;
+  background-color: @skyblue;
+
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+}
+
+.socials__icon {
+  color: #ffffff;
+}
+
+.socials__link:active .socials__icon {
+  opacity: 0.3;
+}

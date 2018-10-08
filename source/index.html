@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sedona</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body class="page">
+    <div class="page__sprite-wrapper">
+      <include src="build/img/sprite-auto.svg"></include>
+    </div>
+    <header class="page-header">
+      <nav class="page-header__site-nav site-nav">
+        <div class="site-nave__logo logo">
+          <a class="logo__link">
+            <img class="logo__image" src="img/logo.png" width="138" height="70">
+          </a>
+        </div>
+        <ul class="site-nav__list">
+          <li class="site-nav__item site-nav__item_first">
+            <a href="#" class="site-nav__link site-nav__link_text-left">Информация</a>
+          </li>
+          <li class="site-nav__item site-nav__item_second">
+            <a href="#" class="site-nav__link site-nav__link_text-left">Фото и видео</a>
+          </li>
+          <li class="site-nav__item  site-nav__item_third">
+            <a href="#" class="site-nav__link site-nav__link_text-right">Карта штата</a>
+          </li>
+          <li class="site-nav__item site-nav__item_fourth">
+            <a href="#" class="site-nav__link site-nav__link_text-right">Гостиницы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Седона</h1>
+      <section class="page__promo promo">
+        <div class="promo__image-wrapper">
+          <img class="promo__image" src="img/background-photo.jpg" width="1200" alt="">
+        </div>
+        <div class="promo__slogan">
+          <span class="promo__slogan-text promo__slogan-text_welcome"><b class="visually-hidden">Welcome</b></span>
+          <span class="promo__slogan-text promo__slogan-text_gorgeous"><i class="visually-hidden">to the gorgeous</i></span>
+          <span class="promo__slogan-text promo__slogan-text_sedona"><b class="visually-hidden">Sedona</b></span>
+          <span class="promo__slogan-text promo__slogan-text_canyon"><i class="visually-hidden">"Because the Grand Canyon sucks!"</i></span>
+        </div>
+      </section>
+      <section class="features">
+        <h2 class="features__main-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <b class="features__intro">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</b>
+        <ul class="features__list">
+          <li class="features__item features__item_large features__item_town">
+            <div class="features__item-inner">
+              <h3 class="features__title">Настоящий городок</h3>
+              <p class="features__number">
+                <span class="features__text-in-number">№1</span>
+              </p>
+              <p class="features__text">Седона - не аттракцион для туристов,
+              там течет своя жизнь</p>
+            </div>
+            <ul class="features__sub-list">
+              <li class="features__sub-item features__sub-item_house">
+                <h4 class="features__title">Жилье</h4>
+                <p class="features__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              </li>
+              <li class="features__sub-item features__sub-item_food">
+                <h4 class="features__title">Еда</h4>
+                <p class="features__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+              <li class="features__sub-item features__sub-item_souvenir">
+                <h4 class="features__title">Сувениры</h4>
+                <p class="features__text">Не только китайского, но и местного производства!</p>
+              </li>
+            </ul>
+          </li>
+          <li class="features__item features__item_large features__item_bridge features__item_reverse">
+            <div class="features__item-inner">
+              <h3 class="features__title">Там есть<br> мост дьявола</h3>
+              <p class="features__number"><span class=features__text-in-number>№2</span></p>
+              <p class="features__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
+          </li>
+          <li class="features__item features__item_small features__item_square">
+            <div class="features__item-inner">
+              <h3 class="features__title">Небольшая площадь</h3>
+              <p class="features__number"><span class=features__text-in-number>№3</span></p>
+              <p class="features__text">Все достопримечательности находятся очень близко</p>
+            </div>
+          </li>
+          <li class="features__item features__item_small features__item_road">
+            <div class="features__item-inner">
+              <h3 class="features__title">Красивая дорога</h3>
+              <p class="features__number"><span class=features__text-in-number>№4</span></p>
+              <p class="features__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </div>
+          </li>
+          <li class="features__item features__item_small features__item_no-tourist">
+            <div class="features__item-inner">
+              <h3 class="features__title">Мало туристов</h3>
+              <p class="features__number"><span class=features__text-in-number>№5</span></p>
+              <p class="features__text">Большинство едет в гранд каньон и толпится там</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="booking">
+        <header class="booking__header">
+          <b class="booking__intro-question">Заинтересовались?</b>
+          <p class=booking__intro-text>Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <button class="booking__btn booking__btn_open btn btn_extra-large btn_brown">Поиск гостиницы в Седоне</button>
+        </header>
+        <div class="booking__map">
+          <form class="form form_close booking__form" action="http://www.echo.htmlacademy.ru" method="get">
+            <div class="form__item-wrapper form__item-wrapper_date">
+              <label class="form__label" for="date-in">Дата заезда:</label>
+              <input class="form__field form__field_date" type="text" name="date-in" id="date-in" placeholder="24 апреля 2017">
+              <svg class="form__calendar" width="21" height="22">
+                <use xlink:href="#s-calendar"></use>
+              </svg>
+            </div>
+            <div class="form__item-wrapper form__item-wrapper_date">
+              <label class="form__label" for="date-out">Дата выезда:</label>
+              <input class="form__field form__field_date" type="text" name="date-out" id="date-out" placeholder="4 июля 2017">
+              <svg class="form__calendar" width="21" height="22">
+                <use xlink:href="#s-calendar"></use>
+              </svg>
+            </div>
+            <div class="form__fieldset form__fieldset_people">
+              <div class="form__item-wrapper form__item-wrapper_adults">
+                <label class="form__label" for="adult">Взрослые:</label>
+                <input class="form__field form__field_people" type="text" name="adult" id="adults" placeholder="0">
+                <span class="form__count form__count_minus"></span>
+                <span class="form__count form__count_plus"></span>
+              </div>
+              <div class="form__item-wrapper form__item-wrapper_children">
+                <label class="form__label" for="children">Дети:</label>
+                <input class="form__field form__field_people" type="text" name="children" id="children" placeholder="0">
+                <span class="form__count form__count_minus"></span>
+                <span class="form__count form__count_plus"></span>
+              </div>
+            </div>
+            <button class="btn btn_blue btn_large form__btn" type="submit">Найти</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <p class="page-footer__tag">#Visitsedona</p>
+      <div class="socials page-footer__socials">
+        <a class="socials__link" href="#">
+          <svg class="socials__icon socials__icon_twitter" width="17" height="15">
+            <use xlink:href="#s-twitter"></use>
+          </svg>
+        </a>
+        <a class="socials__link" href="#">
+          <svg class="socials__icon socials__icon_fb" width="12" height="22">
+            <use xlink:href="#s-fb"></use>
+          </svg>
+        </a>
+        <a class="socials__link" href="#">
+          <svg class="socials__icon socials__icon_youtube" width="20" height="16">
+            <use xlink:href="#s-ytb"></use>
+          </a>
+        </div>
+        <div class="copyright page-footer__copyright">
+          <span class="copyright__intro">website by</span>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">
+            <svg class="copyright__icon" width="115" height="41">
+              <use xlink:href="#s-html-academy"></use>
+            </svg>
+          </a>
+          <span class="visually-hidden">HTML Academy</span>
+        </div>
+      </div>
+    </footer>
+    <script>
+      var form = document.querySelectorAll(".form");
+      var control = document.querySelectorAll(".booking__btn");
+      control.addEventListener("click", function(evt){
+        form.classList.toggle("form_close");
+      });
+    </script>
+  </body>
+</html>
+
