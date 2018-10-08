@@ -111,7 +111,7 @@
           <button class="booking__btn booking__btn_open btn btn_extra-large btn_brown">Поиск гостиницы в Седоне</button>
         </header>
         <div class="booking__map">
-          <form class="form booking__form" action="http://www.echo.htmlacademy.ru" method="get">
+          <form class="form form_close booking__form" action="http://www.echo.htmlacademy.ru" method="get">
             <div class="form__item-wrapper form__item-wrapper_date">
               <label class="form__label" for="date-in">Дата заезда:</label>
               <input class="form__field form__field_date" type="text" name="date-in" id="date-in" placeholder="24 апреля 2017">
@@ -163,7 +163,7 @@
             <use xlink:href="#s-ytb"></use>
           </a>
         </div>
-        <div class="copyright">
+        <div class="copyright page-footer__copyright">
           <span class="copyright__intro">website by</span>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">
             <svg class="copyright__icon" width="115" height="41">
@@ -174,5 +174,13 @@
         </div>
       </div>
     </footer>
+    <script>
+      var form = document.querySelectorAll(".form");
+      var control = document.querySelectorAll(".booking__btn");
+      control.addEventListener("click", function(evt){
+        form.classList.toggle("form_close");
+      });
+    </script>
   </body>
 </html>
+
